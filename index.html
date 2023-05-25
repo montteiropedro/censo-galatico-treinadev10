@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <title>Censo Galático - TreinaDev 10</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">
+      <h1>Censo Galático</h1>
+    </a>
+
+    <form id="search" action="search-results.html" method="GET">
+      <input id="search--bar" type="text" name="search" placeholder="Pesquisar planeta">
+      <button id="search--submit" type="submit">Pesquisar</button>
+    </form>
+  </nav>
+
+  <main>
+    <section id="planet-list">
+      <h2 id="planet-list--title">Selecione um planeta</h2>
+      <ul id="planet-list--ul"></ul>
+
+      <div id="planet-list--navigation">
+        <button id="planet-list--previous">Anterior</button>
+        <button id="planet-list--next">Próximo</button>
+      </div>
+    </section>
+
+    <section id="planet-info">
+      <p>Nenhum planeta selecionado</p>
+    </section>
+  </main>
+  
+  <script src="index-script.js"></script>
+</body>
+</html>

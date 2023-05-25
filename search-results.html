@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Resultado da Pesquisa | Censo Galático - TreinaDev 10</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">
+      <h1>Censo Galático</h1>
+    </a>
+
+    <form id="search" action="search-results.html" method="GET">
+      <input id="search--bar" type="text" name="search" placeholder="Pesquisar planeta">
+      <button id="search--submit" type="submit">Pesquisar</button>
+    </form>
+  </nav>
+
+  <main>
+    <section id="planet-list__search">
+      <h2 id="planet-list--title__search">Resultado da sua pesquisa: <span id="planet-list--count"></span> planeta(s)</h2>
+      <ul id="planet-list--ul__search"></ul>
+    </section>
+  </main>
+  
+  <script src="search-script.js"></script>
+</body>
+</html>
